@@ -1,0 +1,17 @@
+[package]
+name = "spore_extension_lua"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ckb-std = { version = "0.15.1", features = ["dlopen-c"]}
+
+spore-utils = { path = "../../lib/utils" }
+spore-errors = { path = "../../lib/errors" }
+
+[build-dependencies]
+ckb-hash = "0.118.0"
+
+[features]
+default = []
+release_export = []

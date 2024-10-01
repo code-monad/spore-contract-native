@@ -1,0 +1,15 @@
+[package]
+name = "cluster_agent"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ckb-std = "0.15.3"
+spore-utils = { path = "../../lib/utils" }
+spore-types = { path = "../../lib/types" }
+spore-errors = { path = "../../lib/errors" }
+
+
+[build-dependencies]
+ckb-hash = "0.118.0"
+spore-build-tools = { path = "../../lib/build" }

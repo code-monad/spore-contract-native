@@ -1,0 +1,20 @@
+[package]
+name = "cluster_proxy"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ckb-std = "0.15.3"
+
+spore-utils = { path = "../../lib/utils" }
+spore-types = { path = "../../lib/types" }
+spore-errors = { path = "../../lib/errors" }
+
+[build-dependencies]
+ckb-hash = "0.118.0"
+hex = "0.4.3"
+spore-build-tools = { path = "../../lib/build" }
+
+[features]
+default = []
+release_export = []
